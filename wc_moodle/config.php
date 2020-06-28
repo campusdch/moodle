@@ -6,7 +6,8 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'mariadb';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = 'rocmysql02.unne.local';
+$CFG->dbhost    = '192.168.100.50:33069';
+//$CFG->dbhost    = 'rocmysql02.unne.local';
 $CFG->dbname    = 'campusdch';
 $CFG->dbuser    = 'campusdch';
 $CFG->dbpass    = '1GqpY6rieJ';
@@ -18,8 +19,9 @@ $CFG->dboptions = array (
   'dbcollation' => 'utf8_general_ci',
 );
 
-$CFG->wwwroot   = 'http://campus.dch.unne.edu.ar';
-$CFG->dataroot  = '/srv/www/moodledata';
+$CFG->wwwroot   = 'http://campusderecho.com';
+//$CFG->wwwroot   = 'http://campus.dch.unne.edu.ar';
+$CFG->dataroot  = '/home/nfs/moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
