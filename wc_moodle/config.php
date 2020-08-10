@@ -19,14 +19,14 @@ $CFG->dboptions = array (
   'dbcollation' => 'utf8_general_ci',
 );
 
-$CFG->wwwroot   = 'http://sd-1787591-l.dattaweb.com';
-//$CFG->wwwroot   = 'http://campusderecho.com';
+//$CFG->wwwroot   = 'http://sd-1787591-l.dattaweb.com';
+$CFG->wwwroot   = 'https://campusderecho.com';
 //$CFG->wwwroot   = 'http://campus.dch.unne.edu.ar';
 $CFG->dataroot  = '/home/nfs/moodledata';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
-
+$CFG->sslproxy = true;
 require_once(__DIR__ . '/lib/setup.php');
 
 // There is no php closing tag in this file,
